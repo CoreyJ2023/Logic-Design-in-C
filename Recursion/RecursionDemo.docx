@@ -1,0 +1,20 @@
+/*
+	Programmer:		Corey Jenkins
+	Date:			April 29, 2017
+	Filename:		RecursionDemo
+	Purpose:		A demonstration in using a recursion.
+*/
+
+Module Main()
+	// By passing the argument 5 to the message module,
+	// we are telling it to display the message
+	// five times.
+	Call message(5)
+End Module
+
+Module Message(Integer times)
+	If times > 0 Then
+		Display "this is a recursive module."
+		Call message(times - 1)
+	End If
+End Module
